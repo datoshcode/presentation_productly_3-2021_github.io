@@ -1,0 +1,556 @@
+<!-- 
+Сайт свёрстан по макету "Productly";
+Автор вёрстки: Андрей Овчаров;
+Дата вёрстки: 21.01.2021;
+E-mail: datoshcode@gmail.com.
+Все авторские права на графический макет, принадлежат его автору. 
+Сайт сверстан с ознакомительной целью, без получения коммерческой выгоды.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productly</title>
+
+    <!-- Внешний веб-шрифт "Poppins":
+    font-family: 'Poppins', sans-serif, (400, 500, 600, 800) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Внешние стили -->
+    <!-- Сброс стилей браузеров -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- Стили для слайдера -->
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <!-- Стили для jquery -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+
+    <!-- Основные стили сайта -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Стили адаптива сайта -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Блок с вложенными элементами в шапке-->
+        <div class="header__inner">
+          <!-- Логотип шапки сайта -->
+          <a class="logo" href="#">
+            <img class="logo__img" src="img/logo.png" alt="Logo" />
+          </a>
+
+          <!-- Навигационное меню -->
+          <nav class="menu">
+            <div class="menu__btn">
+              <span></span>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Product</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Customers</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Pricing</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Кнопки регистрации и входа на сайт -->
+          <div class="user-nav">
+            <a class="user__nav-link" href="#">Sign In</a>
+            <a class="user__nav-link" href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Верхний блок "The Design Thinking superpowers" -->
+    <section class="top">
+      <div class="container">
+        <div class="top__inner">
+          <h1 class="top__title title">The Design Thinking superpowers</h1>
+          <p class="top__text">
+            Tools, tutorials, design and innovation experts, all in one place!
+            The most intuitive way to imagine your next user experience.
+          </p>
+          <button class="top__btn">Get started</button>
+          <a class="top__link" href="#">Watch the Video</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок  "We design tools to unveil your superpowers" -->
+    <section class="tools">
+      <h2 class="tools__title title">
+        We design tools to unveil your superpowers
+      </h2>
+      <div class="tools_inner">
+        <div class="container">
+          <div class="tools__items">
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="img/tools-1.svg"
+                alt="Tools img"
+              />
+              <h4 class="tools__item-title title">First click tests</h4>
+              <p class="tools-text">While most people enjoy casino gambling.</p>
+            </div>
+
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="img/tools-2.svg"
+                alt="Tools img"
+              />
+              <h4 class="tools__item-title title">Design surveys</h4>
+              <p class="tools-text">
+                Sports betting, lottery and bingo playing for the fun.
+              </p>
+            </div>
+
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="img/tools-3.svg"
+                alt="Tools img"
+              />
+              <h4 class="tools__item-title title">Preference tests</h4>
+              <p class="tools-text">The Myspace page defines the individual.</p>
+            </div>
+
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="img/tools-4.svg"
+                alt="Tools img"
+              />
+              <h4 class="tools__item-title title">Five second tests</h4>
+              <p class="tools-text">
+                Personal choices and the overall personality of the persons.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="tools__link" href="#">Sign up now</a>
+      </div>
+    </section>
+
+    <!-- Наши услуги -->
+    <section class="direction">
+      <div class="container">
+        <!-- Услуги дизайнера -->
+        <div class="direction__item">
+          <div class="direction__item-content">
+            <p class="direction__item-pretitle">Effortless Validation for</p>
+            <h2 class="direction__item-title title">Design Professionals</h2>
+            <p class="direction__item-titletext">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <h5 class="direction__item-subtitle title">Accessory makers</h5>
+            <p class="direction__item-text">
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun.
+            </p>
+            <h5 class="direction__item-subtitle title">Alterationists</h5>
+            <p class="direction__item-text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money.
+            </p>
+            <h5 class="direction__item-subtitle title">
+              Custom Design designers
+            </h5>
+            <p class="direction__item-text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money.
+            </p>
+          </div>
+          <img
+            class="direction__item-img"
+            src="img/direction-1.svg"
+            alt="Design Professionals image"
+          />
+        </div>
+
+        <!-- Услуги менеджера -->
+        <div class="direction__item">
+          <img
+            class="direction__item-img"
+            src="img/direction-2.svg"
+            alt="Design Professionals image"
+          />
+          <div class="direction__item-content">
+            <p class="direction__item-pretitle">Easier decision making for</p>
+            <h2 class="direction__item-title title">Product Managers</h2>
+            <p class="direction__item-titletext">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <ul class="direction__list">
+              <li class="direction__list-item">
+                Never worry about overpaying for your energy again.
+              </li>
+              <li class="direction__list-item">
+                We will only switch you to energy companies that we trust and
+                will treat you right
+              </li>
+              <li class="direction__list-item">
+                We track the markets daily and know where the savings are.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуги маркетолога -->
+        <div class="direction__item">
+          <div class="direction__item-content">
+            <p class="direction__item-pretitle">Optimisation for</p>
+            <h2 class="direction__item-title title">Marketers</h2>
+            <p class="direction__item-titletext">
+              Few would argue that, despite the advancements of feminism over
+              the past three decades, women still face a double standard when it
+              comes to their behavior.
+            </p>
+            <h5 class="direction__item-subtitle title">Accessory makers</h5>
+            <p class="direction__item-text">
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun.
+            </p>
+            <h5 class="direction__item-subtitle title">Alterationists</h5>
+            <p class="direction__item-text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money.
+            </p>
+            <h5 class="direction__item-subtitle title">
+              Custom Design designers
+            </h5>
+            <p class="direction__item-text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money.
+            </p>
+          </div>
+          <img
+            class="direction__item-img"
+            src="img/direction-3.svg"
+            alt="Design Professionals image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Наша команда -->
+    <section class="team">
+      <div class="container">
+        <div class="team__inner">
+          <!-- Сотрудник 1 -->
+          <div class="team__item team__item--1">
+            <img
+              class="team__item-img"
+              src="img/team-1.jpg"
+              alt="fellow worker
+            "
+            />
+            <p class="team__item-text team__item-text--right">
+              I can help marketing strategy
+            </p>
+          </div>
+
+          <!-- Сотрудник 2 -->
+          <div class="team__item team__item--2">
+            <img
+              class="team__item-img"
+              src="img/team-2.jpg"
+              alt="fellow worker
+            "
+            />
+            <p class="team__item-text team__item-text--left">
+              I can take care of your pitch
+            </p>
+          </div>
+
+          <!-- Сотрудник 3 -->
+          <div class="team__item team__item--3">
+            <img
+              class="team__item-img"
+              src="img/team-3.jpg"
+              alt="fellow worker
+            "
+            />
+            <p class="team__item-text team__item-text--right">
+              I can prototype your app
+            </p>
+          </div>
+
+          <!-- Сотрудник 4 -->
+          <div class="team__item team__item--4">
+            <img
+              class="team__item-img"
+              src="img/team-4.jpg"
+              alt="fellow worker
+            "
+            />
+            <p class="team__item-text team__item-text--right">
+              I can design you website
+            </p>
+          </div>
+
+          <!-- Сотрудник 5 -->
+          <div class="team__item team__item--5">
+            <img
+              class="team__item-img"
+              src="img/team-5.jpg"
+              alt="fellow worker
+            "
+            />
+            <p class="team__item-text team__item-text--right">
+              I will define the profile of your users
+            </p>
+          </div>
+
+          <div class="team__box">
+            <h2 class="team__title title">Need a super hero?</h2>
+            <p class="team__text">
+              Do you require some help for your project: Conception workshop,
+              prototyping, marketing strategy, landing page, Ux/UI?
+            </p>
+            <button class="team__btn">Contact our expert</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Слайдер блог -->
+    <section class="blog">
+      <div class="container">
+        <h2 class="blog__title title">Marketing Strategies</h2>
+        <p class="blog__text">
+          Join 40,000+ other marketers and get proven strategies on email
+          marketing
+        </p>
+        <div class="slider">
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-1.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Increasing Prosperity With Positive Thinking
+            </a>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-2.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Motivation Is The First Step To Success
+            </a>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-3.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Success Steps For Your Personal Or Business Life
+            </a>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-1.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Increasing Prosperity With Positive Thinking
+            </a>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-2.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Motivation Is The First Step To Success
+            </a>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-3.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Success Steps For Your Personal Or Business Life
+            </a>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-1.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Increasing Prosperity With Positive Thinking
+            </a>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-2.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Motivation Is The First Step To Success
+            </a>
+          </div>
+
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="img/blog-3.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="#">Abdullah</a> | 03 March
+              2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Success Steps For Your Personal Or Business Life
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <!-- Логотип подвала -->
+          <a class="footer__logo" href="#">
+            <img class="logo__img" src="img/logo.png" alt="logo" />
+          </a>
+
+          <!-- Меню подвала -->
+          <div class="footer__menu">
+            <!-- Блок "Quick Links" -->
+            <h5 class="footer__menu-title">Quick Links</h5>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">About Us </a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Blog</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Contact</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Блок "Legal Stuff" -->
+          <div class="footer__menu">
+            <h5 class="footer__menu-title">Legal Stuff</h5>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Disclaimer</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Financing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Форма меню подвала -->
+          <form class="footer__form" action="#">
+            <p class="footer__form-text">
+              Knowing you're always on the best energy deal.
+            </p>
+            <input
+              class="footer__form-input"
+              type="tel"
+              placeholder="Enter your phone number"
+            />
+            <button class="footer__form-btn" type="submit">Sign up Now</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Скрипты для сайта -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

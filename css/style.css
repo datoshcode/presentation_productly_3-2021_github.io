@@ -1,0 +1,600 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Глобальные значения для сайта */
+body, button {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #544837;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+button {
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Глобальные стили для заголовков */
+.title {
+  color: #2F281E;
+}
+
+/* Общие стили для контейнеров сайта */
+.container {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Шапка веб-сайта /begin-code */
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+}
+
+/* Навигационное меню сайта /begin-code */
+.menu {
+  margin-left: auto;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item + .menu__list-item {
+  margin-left: 24px;
+}
+
+.menu__list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #2F281E;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* Кнопки регистрации и входа на сайт */
+.user-nav {
+  margin-left: 52px;
+  margin-right: 13px;
+}
+
+.user__nav-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;  
+  color: #173A56;
+  padding: 11px 23px; 
+  text-decoration: none;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
+.user__nav-link + .user__nav-link {
+  margin-left: 14px;
+  border-color: transparent;
+  background-color: #ff9900;
+  color: #ffffff;
+}
+/* Навигационное меню сайта /end-code */
+/* Шапка сайта /end-code */
+
+/* Верхний банер "The Design Thinking superpowers" */
+.top__inner {
+  padding: 133px 0 80px;
+  background-image: url(../img/top-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  
+}
+
+/* Заголовок */
+.top__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  max-width: 518px;
+}
+
+/* Описание */
+.top__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 45px;
+  max-width: 460px;
+}
+
+/* Кнопка "Get started"*/
+.top__btn {
+  display: inline-block;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 41px;
+  margin-right: 30px;
+}
+
+/* Ссылка на видео "Watch the Video"*/
+.top__link {
+  line-height: 24px;
+  display: inline-block;
+  font-weight: 600;
+  color: #ff9900;
+  padding-left: 25px;
+  position: relative;
+}
+
+/* Кнопка просмотра видео */
+.top__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 17px;
+  height: 19px;
+  background-image: url(../img/play-icon.svg);
+}
+
+/* Блок "We design tools to unveil your superpowers"*/
+.tools {
+  padding-top: 110px;
+}
+
+/* Заголовок блока */
+.tools__title {
+  text-align: center;
+  max-width: 539px;
+  margin: 0 auto 46px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  padding: 0 10px;
+}
+
+/* Фоновое изображение блока */
+.tools_inner {
+  padding-bottom: 90px;
+  background-image: url(../img/tools_bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+/* Блок подпунктов */
+.tools__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px 0;
+  margin-bottom: 60px;
+}
+
+.tools__item {
+  width: 240px;
+}
+
+/* Иконки подпунктов */
+.tools__item-img {
+  margin-bottom: 30px;
+}
+
+/* Заголовки подпунктов */
+.tools__item-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 13px;
+}
+
+/* Ссылка-кнопка "Sign up now" */
+.tools__link {
+  display: block;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 32px;
+  margin-right: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 24px;
+  width: 175px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+
+/* Наши услуги */
+.direction {
+  padding: 120px 0 100px;
+}
+
+.direction__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+/* Блок с текстом */
+.direction__item-content {
+  max-width: 486px;
+}
+
+.direction__item-pretitle {
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+.direction__item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  margin-bottom: 22px;
+}
+
+.direction__item-titletext {
+  margin-bottom: 30px;
+}
+
+.direction__item-subtitle {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.direction__item-text {
+  margin-bottom: 25px;
+}
+
+.direction__list {
+  list-style: none;
+}
+
+.direction__list-item {
+  margin-bottom: 30px;
+  padding-left: 65px;
+  position: relative;
+}
+
+/* Маркеры списка */
+.direction__list-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/direction-icon.svg);
+}
+
+/* Наша команда */
+.team {
+  background-image: url(../img/team-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.team__inner {
+  padding: 230px 0 380px;  
+  position: relative;
+}
+
+.team__item {
+  position: absolute;
+  width: 98px;
+  height: 98px;
+}
+
+/* Сотрудник 1 */
+.team__item--1 {
+  right: 95px;
+  top: 157px;
+}
+
+/* Сотрудник 2 */
+.team__item--2 {
+  left: 0;
+  top: 223px;
+}
+
+/* Сотрудник 3 */
+.team__item--3 {
+  right: 0;
+  bottom: 257px;
+}
+
+/* Сотрудник 4 */
+.team__item--4 {
+  left: 210px;
+  bottom: 223px;
+}
+
+/* Сотрудник 5 */
+.team__item--5 {
+  right: 346px;
+  bottom: 120px;
+}
+
+.team__box {
+  text-align: center;
+  max-width: 542px;
+  margin: 0 auto;
+}
+
+.team__item-text {
+  line-height: 24px;
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  margin-bottom: 22px; 
+}
+
+.team__text {
+  color: #567592;
+  margin-bottom: 45px;
+}
+
+/* Кнопка "Contact our expert" */
+.team__btn {
+  background-color: #ff9900;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 30px;
+  margin-right: 30px;
+  color: #ffffff;
+}
+
+/* Общие стили для изображения сотрудников */
+.team__item-img {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Диалоги сотрудников */
+.team__item-text {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 26px;
+  box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+  color: #2F281E;
+  position: absolute;
+  top: -42px;
+  right: 64px;
+  white-space: nowrap;
+}
+
+.team__item-text.team__item-text--left {
+  top: -41px;
+  right: auto;
+  left: 62px;
+}
+
+/* Маленькие кружки на изображениях сотрудников */
+.team__item-text--right::after,
+.team__item-text--right::before,
+.team__item-text--left::after,
+.team__item-text--left::before {
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.team__item-text--right::after,
+.team__item-text--left::after {
+  width: 17px;
+  height: 17px;
+  bottom: -7px;
+  right: 30px;
+}
+
+.team__item-text--right::before,
+.team__item-text--left::before {
+  width: 9px;
+  height: 9px;
+  bottom: -20px;
+  right: 16px;
+}
+
+.team__item-text--left::before {
+  left: 16px;
+  right: auto;
+}
+
+.team__item-text--left::after {
+  left: 30px;
+  right: auto;
+}
+
+/* Слайдер блог */
+.blog {
+  padding: 30px 0 120px;
+}
+
+/* Заголовок блога */
+.blog__title {
+  font-size: 34px;
+  line-height: 51px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+/* Описание блога */
+.blog__text {
+  margin-bottom: 55px;
+}
+
+/* Слайдер */
+.slider {
+  margin: 0 -20px;
+}
+
+.slider__item {
+  padding: 0 20px;
+}
+
+.slider__item-img {
+  width: 348px;
+  height: 185px;
+  object-fit: cover;
+  /* Скругление краев изображения вверху слева и справа по 8px и снизу слева и справа по 0px */
+  border-radius: 8px 8px 0 0; 
+  margin-bottom: 25px;
+}
+
+.slider__item-info {
+  margin-bottom: 12px;
+  line-height: 28px;
+}
+
+/* Автор публикации слайдера */
+.slider__item-author {
+  text-decoration: none;
+  font-weight: 700;
+  color:#544837;
+}
+
+/* Заголовок публикации слайдера */
+.slider__item-title {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 84px;
+}
+
+.slider__item-title:hover {
+  color: #ff9900;
+  /* Плавная смена цвета текста 3 сек. */
+  transition: .3s;
+}
+
+/* Переключатели слайдера */
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+}
+
+.slick-dots button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  background-color: #EFEFEF;
+  font-size: 0;
+  padding: 0;
+  margin: 0 5px;
+}
+
+.slick-dots .slick-active button {
+  background-color: #ff9900;
+}
+
+/* Подвал сайта */
+.footer__inner {
+  padding: 105px 0 100px;
+  border-top: 1px solid rgba(188, 208, 229, 0.50);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Меню подвала */
+.footer__menu {
+  width: 135px;
+}
+
+.footer__menu-title,
+.footer__form-text {
+  margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2F281E;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__menu-link {
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+/* Форма меню подвала */
+.footer__form {
+  width: 330px; 
+}
+
+.footer__form-input {
+  height: 48px; 
+  padding: 0 15px;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 21px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.footer__form-input::placeholder {
+  line-height: 28px;
+  color: #BCD0E5;
+}
+
+.footer__form-btn {
+  background-color: #ff9900;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 8px 15px 7px;
+  border: none;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 30px;
+  display: none;
+}
+
+.menu__btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+.menu__btn::after,
+.menu__btn::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #000000;
+  left: 0;
+}
+
+.menu__btn::before {
+  top: 0;
+}
+
+.menu__btn::after {
+  bottom: 0;
+}
